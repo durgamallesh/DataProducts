@@ -37,6 +37,12 @@ The app is accessible here (https://mallesh.shinyapps.io/height_prediction/)
 * Following logic is used to calculate the Parent's height:
   Parents' height = (father's Height + mother's height + 1.08)/2
 * As one can observe the mother's height is adjusted by increasing it by 8%. This is due to the fact that a women's height is observed to be 8% shorter in general. More information can be found here (http://chance.amstat.org/2013/09/1-pagano/)
+* Prediction Algorithm
+
+```{r eval=FALSE}
+data(galton)
+predC <- lm(child ~ ., data=galton)
+```
 
 --- .class #id 
 

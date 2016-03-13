@@ -85,7 +85,12 @@
 <li>Following logic is used to calculate the Parent&#39;s height:
 Parents&#39; height = (father&#39;s Height + mother&#39;s height + 1.08)/2</li>
 <li>As one can observe the mother&#39;s height is adjusted by increasing it by 8%. This is due to the fact that a women&#39;s height is observed to be 8% shorter in general. More information can be found here (<a href="http://chance.amstat.org/2013/09/1-pagano/">http://chance.amstat.org/2013/09/1-pagano/</a>)</li>
+<li>Prediction Algorithm</li>
 </ul>
+
+<pre><code class="r">data(galton)
+predC &lt;- lm(child ~ ., data=galton)
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
