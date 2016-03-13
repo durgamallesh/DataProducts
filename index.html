@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Height Prediction Application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Height Prediction Application">
+  <meta name="author" content="Mallesh Sunkara">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Height Prediction Application</h1>
+    <h2>Predict child's height based on Parents' height</h2>
+    <p>Mallesh Sunkara<br/>BI Analyst</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Predicting a child&#39;s height has always been a challenging statistical question that many researchers tried to find a solution to. </li>
+<li>As an attempt to use one such algorithm and provide a means for users to predict a child&#39;s height based on the Parents&#39; height, an app is developed.</li>
+<li>This App uses a dataset(Galton) provided by one of the R-Packages (UsingR) to build a model that can be used to predict the height of a child.</li>
+<li>More information about the dataset can be found here (<a href="http://www.inside-r.org/packages/cran/UsingR/docs/galton">http://www.inside-r.org/packages/cran/UsingR/docs/galton</a>)</li>
+</ul>
+
+<p>The app is accessible here (<a href="https://mallesh.shinyapps.io/height_prediction/">https://mallesh.shinyapps.io/height_prediction/</a>)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>App - Details</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="height_prediction_ss.png" alt="width, embed=TRUE"></p>
+
+<ul>
+<li>The above screenshot shows simplicity of the app and inidcates various input and output fields.</li>
+<li>Once we enter the mother and father&#39;s height in inches, the child&#39;s height is predicted in inches and displayed on left side.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data Transformations</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The dataset (galton) has two variables, child&#39;s height and a Parent&#39;s height.</li>
+<li>Following logic is used to calculate the Parent&#39;s height:
+Parents&#39; height = (father&#39;s Height + mother&#39;s height + 1.08)/2</li>
+<li>As one can observe the mother&#39;s height is adjusted by increasing it by 8%. This is due to the fact that a women&#39;s height is observed to be 8% shorter in general. More information can be found here (<a href="http://chance.amstat.org/2013/09/1-pagano/">http://chance.amstat.org/2013/09/1-pagano/</a>)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Final words</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This app helps an end-user to predict a child&#39;s height which has always been limited to the researchers and advanced analysts.</li>
+<li>The model can be improved further by gathering ethnic related heights and including ethnicity as an independent variable.</li>
+</ul>
+
+<p>Disclaimer:  This app is developed as part of a course project, so this should not be used for any real life applications. Also, true child&#39;s height cannot be predicted with complete accuracy.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='App - Details'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data Transformations'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Final words'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
